@@ -714,7 +714,7 @@ html body .text-themecolor {
   background-color: #00AEE1 !important; }
 
 .bg-success {
-  background-color: #14b47c !important; }
+  background-color: #c19d6c !important; }
 
 .bg-info {
   background-color:#00AEE1 !important; }
@@ -3815,11 +3815,11 @@ h1.small{
     color: #0089d5;
 }
 .featured-category.dark ul li a {
-    background:#11bb7c;
+    background:#c39d6b;
     color: #ffffff;
 }
 .featured-category ul li a:hover, .featured-category ul li a:focus {
-    background:#7bc722;
+    background:#041b51;
     color: #ffffff;
 }
 .header-promo {
@@ -4359,7 +4359,7 @@ h5._frc_title a {
     justify-content: center;
     color:#041b51;
     font-weight: 600;
-	background:rgba(11, 133, 236,0.1);
+	background:#c19d6c;
 	transition:all ease 0.4s;
 }
 .btn.btn-theme.blue.light:hover, .btn.btn-theme.blue.light:focus{
@@ -4423,7 +4423,7 @@ h5._frc_title a {
     margin: 0 auto 0.5rem;
 }
 .urip_cated .urip_cated_avater i {
-    color:#041b51;
+    color:#c39d6b;
     font-size: 45px;
 }
 .urip_cated .cats_urip_title {
@@ -10141,7 +10141,7 @@ h4.widget-title {
 	font-weight:500;
 }
 footer.skin-dark-footer h4 {
-    color: #ffffff;
+    color: #c39d6b;
     text-transform: uppercase;
 }
 footer.skin-dark-footer .footer-widget ul li a, footer.skin-dark-footer, footer.skin-dark-footer a{
