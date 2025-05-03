@@ -4672,8 +4672,8 @@ a._5gt9:hover img {
 	padding:2rem 0;
 }
 ._freelacers_120_thumb {
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -10469,7 +10469,7 @@ footer.skin-dark-footer ul.footer-bottom-social li a:hover, footer.skin-dark-foo
 	}
 	
 	.hero-banner.full {
-		height: 100vh;
+		height: 60vh;
 	}
 
 }
