@@ -2190,7 +2190,7 @@ outline:none;
 	color:#495057 !important;
 }
 select.form-control:not([size]):not([multiple]) {
-    height: 56px;
+    height: 64px;
 }
 select.form-control.fc-lg:not([size]):not([multiple]) {
     height:62px;
@@ -3422,7 +3422,7 @@ body .nav-menu.nav-menu-social>li.add-listing.bg-whit a{
     color:#14b47c !important;
 }
 .nav-brand img {
-    max-width:135px;
+    max-width:250px;
 	position: relative;
     top:0px;
 }
