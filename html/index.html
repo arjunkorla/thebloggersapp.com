@@ -53,7 +53,8 @@
 									</ul>
 									
 									<ul class="nav-menu nav-menu-social align-to-right">
-										<li>العربية</li>
+										<li class="arabic"><a href="arindex.html">العربية</a></li>
+
 										<li class="add-listing dark-bg">
 											<a href="#" data-toggle="modal" data-target="#login">
 												 <i class="ti-user mr-1"></i> Signin / Signup
@@ -90,7 +91,7 @@
 											<input type="text" class="form-control b-0 b-r l-radius" placeholder="Search Influencers">
 										</div>
 									</div>
-									
+
 									<div class="col-lg-5 col-md-4 col-sm-12 p-0">
 										<div class="form-group">
 											<select id="jb-category" class="js-states form-control b-0">
@@ -580,7 +581,7 @@
 							<div class="col-lg-4 col-md-6">
 								<div class="footer-widget">
 									<img src="assets/img/logo-light.png" class="img-fluid f-logo" width="220" alt="">
-									<p>407-472 Rue Saint-Sulpice, Montreal<br>Quebec, H2Y 2V8</p>
+									<p>Building Name, Street Name, Block,<br>Kuwait Trade Zone, Kuwait.</p>
 									<ul class="footer-bottom-social">
 										<li><a href="#"><i class="ti-facebook"></i></a></li>
 										<li><a href="#"><i class="ti-twitter"></i></a></li>
@@ -663,103 +664,126 @@
 							<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="ti-close"></i></span></button>
 						</div>
 						<div class="modal-body">
-							
-							<div class="login-form">
+
+							<!-- Login Form -->
+							<div class="login-form form-section" id="login-form">
 								<form>
-								
 									<div class="form-group">
 										<label>User Name</label>
 										<input type="text" class="form-control" placeholder="Username">
 									</div>
-									
 									<div class="form-group">
 										<label>Password</label>
 										<input type="password" class="form-control" placeholder="*******">
 									</div>
-									
 									<div class="form-group">
 										<button type="submit" class="btn dark-2 btn-md full-width pop-login">Login</button>
 									</div>
-								
-								</form>
-							</div>
-							
-							<div class="form-group text-center">
-								<span>Or Signin with</span>
-							</div>
-							
-							<div class="social_logs mb-4">
-								<ul class="shares_jobs text-center">
-									<li><a href="#" class="share fb"><i class="fa fa-facebook"></i></a></li>
-									<li><a href="#" class="share gp"><i class="fa fa-google"></i></a></li>
-									<li><a href="#" class="share ln"><i class="fa fa-linkedin"></i></a></li>
-								</ul>
-							</div>
-							
-						</div>
-						<div class="modal-footer">
-							<div class="mf-link"><i class="ti-user"></i>Haven't An Account?<a href="javascript:void(0)" class="theme-cl"> Sign Up</a></div>
-							<div class="mf-forget"><a href="#"><i class="ti-help"></i>Forget Password</a></div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<!-- End Modal -->
 
-			<!-- Upload Resume -->
-			<div class="modal fade" id="upload-resume" tabindex="-1" role="dialog" aria-labelledby="resumeupload" aria-hidden="true">
-				<div class="modal-dialog modal-dialog-centered login-pop-form" role="document">
-					<div class="modal-content" id="resumeupload">
-						<div class="modal-header">
-							<h4>Upload Resume</h4>
-							<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="ti-close"></i></span></button>
-						</div>
-						<div class="modal-body">
-							
-							<div class="login-form">
-								<form>
-								
-									<div class="form-row">
-										<div class="col-lg-6 col-md-12">
-											<div class="form-group">
-												<label>Full Name</label>
-												<input type="text" class="form-control" placeholder="Username">
-											</div>
-										</div>
-										
-										<div class="col-lg-6 col-md-12">
-											<div class="form-group">
-												<label>E-Mail ID</label>
-												<input type="email" class="form-control" placeholder="ucicl@gmail.com">
-											</div>
-										</div>
-									</div>
-									
 									<div class="form-group">
-										<label>Paste Your Resume</label>
-										<textarea class="form-control ht-150" placeholder="Copy & Paste Resume"></textarea>
+										<a href="javascript:void(0);" id="show-forgot"><i class="ti-help"></i>Forget Password</a>
 									</div>
-									
-									<div class="form-group">
-										<label class="light">doc, docx,pdf,txt,png</label>
-										<div class="custom-file">
-											<input type="file" class="custom-file-input" id="uploadResume">
-											<label class="custom-file-label" for="uploadResume"><i class="ti-link mr-1"></i>Upload Resume</label>
-										</div>
-									</div>
-									
-									<div class="form-group">
-										<button type="submit" class="btn dark-2 btn-md full-width pop-login">Upload Resume</button>
-									</div>
-								
 								</form>
 							</div>
-							
+						
+							<!-- Sign Up Form -->
+							<div class="signup-form form-section d-none" id="signup-form">
+								<form>
+									  <!-- Toggle Switch -->
+									<div class="form-group">
+										<label>Signup as</label>
+										<div class="user-type-toggle btn-group btn-group-toggle d-flex" data-toggle="buttons">
+											<label class="btn btn-outline-primary flex-fill active">
+												<input type="radio" name="userType" id="toggle-business" value="business" autocomplete="off" checked> Business
+											</label>
+											<label class="btn btn-outline-primary flex-fill">
+												<input type="radio" name="userType" id="toggle-blogger" value="blogger" autocomplete="off"> Blogger
+											</label>
+										</div>
+									</div>
+
+									<div class="form-group">
+										<label>Full Name</label>
+										<input type="text" class="form-control" placeholder="Full Name">
+									</div>
+
+									<div class="form-group">
+										<label>Email Address</label>
+										<input type="email" class="form-control" placeholder="Email">
+									</div>
+
+									<div class="form-group">
+										<label>Password</label>
+										<input type="password" class="form-control" placeholder="Create Password">
+									</div>
+
+									<!-- Business-specific field -->
+									<div class="form-group" id="business-name-group">
+										<label>Business Name</label>
+										<input type="text" class="form-control" placeholder="Your Business Name">
+									</div>
+
+									<!-- Blogger-specific field -->
+									<div class="form-group d-none" id="blog-url-group">
+										<label>Blog URL</label>
+										<input type="text" class="form-control" placeholder="https://yourblog.com">
+									</div>
+
+									<div class="form-group">
+										<button type="submit" class="btn dark-2 btn-md full-width">Sign Up</button>
+									</div>
+								</form>
+							</div>
+
+						
+							<!-- Forget Password Form -->
+							<div class="forgot-form form-section d-none" id="forgot-form">
+								<form>
+									<div class="form-group">
+										<label>Email Address</label>
+										<input type="email" class="form-control" placeholder="Enter your email">
+									</div>
+									<div class="form-group">
+										<button type="submit" class="btn dark-2 btn-md full-width">Reset Password</button>
+									</div>
+								</form>
+							</div>
+						
 						</div>
+
+						<div class="modal-footer">
+
+						<!-- Footer for Sign In -->
+						<div class="footer-signin" id="footer-signin">
+							<div class="mf-link">
+								<i class="ti-user"></i>Haven't An Account? 
+								<a href="javascript:void(0);" id="show-signup"> Sign Up</a>
+							</div>
+						</div>
+
+						<!-- Footer for Sign Up -->
+						<div class="footer-signup d-none" id="footer-signup">
+							<div class="mf-link">
+								<i class="ti-lock"></i>Already have an account? 
+								<a href="javascript:void(0);" id="show-login-from-signup"> SignIn</a>
+							</div>
+						</div>
+
+						<!-- Footer for Forget Password -->
+						<div class="footer-forgot d-none" id="footer-forgot">
+							<div class="mf-link">
+								<a href="javascript:void(0);" id="show-login-from-forgot">
+									<i class="ti-angle-left"></i> Back to SignIn
+								</a>
+							</div>
+						</div>
+
+						</div>
+						
 					</div>
 				</div>
 			</div>
-			<!-- Upload Resume -->			
+			<!-- End Modal -->		
 
 		</div>
 		<!-- ============================================================== -->
@@ -783,6 +807,86 @@
 		<!-- This page plugins -->
 		<!-- ============================================================== -->
 
+		<script>
+			document.addEventListener("DOMContentLoaded", function () {
+				// Form sections
+				const loginForm = document.getElementById("login-form");
+				const signupForm = document.getElementById("signup-form");
+				const forgotForm = document.getElementById("forgot-form");
+			
+				// Footer sections
+				const footerSignin = document.getElementById("footer-signin");
+				const footerSignup = document.getElementById("footer-signup");
+				const footerForgot = document.getElementById("footer-forgot");
+			
+				// Show login form
+				function showLogin() {
+					loginForm.classList.remove("d-none");
+					signupForm.classList.add("d-none");
+					forgotForm.classList.add("d-none");
+			
+					footerSignin.classList.remove("d-none");
+					footerSignup.classList.add("d-none");
+					footerForgot.classList.add("d-none");
+				}
+			
+				// Show signup form
+				function showSignup() {
+					loginForm.classList.add("d-none");
+					signupForm.classList.remove("d-none");
+					forgotForm.classList.add("d-none");
+			
+					footerSignin.classList.add("d-none");
+					footerSignup.classList.remove("d-none");
+					footerForgot.classList.add("d-none");
+				}
+			
+				// Show forgot password form
+				function showForgot() {
+					loginForm.classList.add("d-none");
+					signupForm.classList.add("d-none");
+					forgotForm.classList.remove("d-none");
+			
+					footerSignin.classList.add("d-none");
+					footerSignup.classList.add("d-none");
+					footerForgot.classList.remove("d-none");
+				}
+			
+				// Event bindings
+				document.getElementById("show-signup").addEventListener("click", showSignup);
+				document.getElementById("show-forgot").addEventListener("click", showForgot);
+				document.getElementById("show-login-from-signup").addEventListener("click", showLogin);
+				document.getElementById("show-login-from-forgot").addEventListener("click", showLogin);
+			});
+			</script>
+			
+			
+			
+			<script>
+				document.addEventListener("DOMContentLoaded", function () {
+					const businessGroup = document.getElementById("business-name-group");
+					const blogGroup = document.getElementById("blog-url-group");
+				
+					const radios = document.querySelectorAll('input[name="userType"]');
+					radios.forEach(radio => {
+						radio.addEventListener("change", function () {
+							if (this.value === "business") {
+								businessGroup.classList.remove("d-none");
+								blogGroup.classList.add("d-none");
+							} else if (this.value === "blogger") {
+								blogGroup.classList.remove("d-none");
+								businessGroup.classList.add("d-none");
+							}
+				
+							// Optional: Toggle active class manually if needed (for Bootstrap < 4.3)
+							document.querySelectorAll('.user-type-toggle .btn').forEach(btn => btn.classList.remove('active'));
+							this.closest('label').classList.add('active');
+						});
+					});
+				});
+				</script>
+				
+				
 		
 	</body>
 </html>
