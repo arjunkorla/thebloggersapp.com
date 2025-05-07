@@ -8,10 +8,13 @@
 		
         <!-- All Plugins Css -->
         <link href="assets/css/plugins.css" rel="stylesheet">
-		 
 
         <!-- Custom CSS -->
         <link href="assets/css/styles.css" rel="stylesheet">
+
+		<!-- Swiper CSS -->
+		<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
     </head>
 	
     <body class="blue-skin">
@@ -31,8 +34,32 @@
 
             <!-- Start Navigation -->
 			<div class="header header-transparent dark-text">
+
+				<div class="top_bg">
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-6 col-md-6 col-sm-12">
+								<ul class="footer-bottom-social">
+									<li><a href="#"><i class="ti-facebook"></i></a></li>
+									<li><a href="#"><i class="ti-twitter"></i></a></li>
+									<li><a href="#"><i class="ti-instagram"></i></a></li>
+									<li><a href="#"><i class="ti-linkedin"></i></a></li>
+								</ul>
+							</div>
+
+							<div class="col-lg-6 col-md-6 col-sm-12 align-right">
+								<a href="#" data-toggle="modal" data-target="#login">
+									<i class="ti-user mr-1"></i> Signin / Signup
+								</a>
+								<a href="arindex.html" class="arabic"> العربية <i class="ti-comment mr-1"></i></a>
+							</div>
+						</div>
+					</div>
+				</div>
+
 				<div class="container">
 					<div class="row">
+						
 						<div class="col-lg-12 col-md-12 col-sm-12">
 							<nav id="navigation" class="navigation navigation-landscape">
 								<div class="nav-header">
@@ -51,16 +78,6 @@
 										<li><a href="#">About Us</a></li>
 										<li><a href="#">News & Events</a></li>
 										<li><a href="#">Contact Us</a></li>
-									</ul>
-									
-									<ul class="nav-menu nav-menu-social align-to-right">
-										<li><a href="arindex.html" class="arabic">العربية</a></li>
-
-										<li class="add-listing dark-bg">
-											<a href="#" data-toggle="modal" data-target="#login">
-												 <i class="ti-user mr-1"></i> Signin / Signup
-											</a>
-										</li>
 									</ul>
 								</div>
 							</nav>
@@ -139,37 +156,46 @@
 			<section class="min-sec">
 				<div class="container">
 				
-					<div class="row justify-content-center">
-						<div class="col-lg-7 col-md-9">
+					<div class="row">
+						<div class="col-lg-6 col-md-6">
 							<div class="sec-heading">
-								<h2>Popular <span class="theme-cl-2">Influencers</span></h2>
+								<h2 class="text-left">Popular <span class="theme-cl-2">Influencers</span></h2>
 							</div>
 						</div>
+						<div class="col-lg-6 col-md-6 text-right"><a href="#">View All</a></div>
 					</div>
 					
 					<div class="row justify-content-center">
-								
-						<!-- Single Item -->
-						<div class="col-lg-3 col-md-6 col-sm-12">
-							<div class="_freelacers_120 large">
-								<div class="jobs-like"><label class="toggler toggler-danger"><input type="checkbox"><i class="fa fa-heart"></i></label></div>
-								<div class="_freelacers_120_thumb">
-									<img src="assets/img/verify.svg" class="verified" width="15" alt="">
-									<a href="freelancer-detail.html"><img src="assets/img/team-1.jpg" class="img-fluid circle" alt=""></a>
-								</div>
-								<div class="_freelacers_120_caption">
-									<div class="_freelan_laft"><i class="ti-location-pin mr-1"></i>Hawalli, Kuwait City</div>
-									<h4><a href="freelancer-detail.html">AboFlah (Hassan Suleyman)</a></h4>
-									<span class="_freel_spec">Gaming & Philanthropy</span>
-								</div>
-								<div class="_freelacers_120_body">
-									<div class="_freelacers_121_foot">
-										<a href="freelancer-detail.html" class="btn btn-theme blue light">View Profile</a>	
+
+						<!-- Swiper Container -->
+						<div class="swiper mySwiper">
+						<div class="swiper-wrapper">
+							
+						
+						<div class="swiper-slide">
+							<!-- Single Item -->
+							<div class="col-lg-3 col-md-6 col-sm-12">
+								<div class="_freelacers_120 large">
+									<div class="jobs-like"><label class="toggler toggler-danger"><input type="checkbox"><i class="fa fa-heart"></i></label></div>
+									<div class="_freelacers_120_thumb">
+										<img src="assets/img/verify.svg" class="verified" width="15" alt="">
+										<a href="freelancer-detail.html"><img src="assets/img/team-1.jpg" class="img-fluid circle" alt=""></a>
+									</div>
+									<div class="_freelacers_120_caption">
+										<div class="_freelan_laft"><i class="ti-location-pin mr-1"></i>Hawalli, Kuwait City</div>
+										<h4><a href="freelancer-detail.html">AboFlah (Hassan Suleyman)</a></h4>
+										<span class="_freel_spec">Gaming & Philanthropy</span>
+									</div>
+									<div class="_freelacers_120_body">
+										<div class="_freelacers_121_foot">
+											<a href="freelancer-detail.html" class="btn btn-theme blue light">View Profile</a>	
+										</div>
 									</div>
 								</div>
 							</div>
 						</div>
 						
+						<div class="swiper-slide">
 						<!-- Single Item -->
 						<div class="col-lg-3 col-md-6 col-sm-12">
 							<div class="_freelacers_120 large">
@@ -190,7 +216,9 @@
 								</div>
 							</div>
 						</div>
-						
+						</div>
+
+						<div class="swiper-slide">
 						<!-- Single Item -->
 						<div class="col-lg-3 col-md-6 col-sm-12">
 							<div class="_freelacers_120 large">
@@ -211,7 +239,9 @@
 								</div>
 							</div>
 						</div>
-						
+						</div>
+
+						<div class="swiper-slide">
 						<!-- Single Item -->
 						<div class="col-lg-3 col-md-6 col-sm-12">
 							<div class="_freelacers_120 large">
@@ -232,7 +262,9 @@
 								</div>
 							</div>
 						</div>
-						
+						</div>
+
+						<div class="swiper-slide">
 						<!-- Single Item -->
 						<div class="col-lg-3 col-md-6 col-sm-12">
 							<div class="_freelacers_120 large">
@@ -253,7 +285,9 @@
 								</div>
 							</div>
 						</div>
+						</div>
 						
+						<div class="swiper-slide">
 						<!-- Single Item -->
 						<div class="col-lg-3 col-md-6 col-sm-12">
 							<div class="_freelacers_120 large">
@@ -274,7 +308,9 @@
 								</div>
 							</div>
 						</div>
-
+						</div>
+						
+						<div class="swiper-slide">
 						<div class="col-lg-3 col-md-6 col-sm-12">
 							<div class="_freelacers_120 large">
 								<div class="jobs-like"><label class="toggler toggler-danger"><input type="checkbox"><i class="fa fa-heart"></i></label></div>
@@ -294,26 +330,36 @@
 								</div>
 							</div>
 						</div>
-
-						<div class="col-lg-3 col-md-6 col-sm-12">
-							<div class="_freelacers_120 large">
-								<div class="jobs-like"><label class="toggler toggler-danger"><input type="checkbox"><i class="fa fa-heart"></i></label></div>
-								<div class="_freelacers_120_thumb">
-									<img src="assets/img/verify.svg" class="verified" width="15" alt="">
-									<a href="freelancer-detail.html"><img src="assets/img/team-5.jpg" class="img-fluid circle" alt=""></a>
-								</div>
-								<div class="_freelacers_120_caption">
-									<div class="_freelan_laft"><i class="ti-location-pin mr-1"></i>Kuwait City, Kuwait</div>
-									<h4><a href="freelancer-detail.html">Fahad Alaradi</a></h4>
-									<span class="_freel_spec">Social Media Personality</span>
-								</div>
-								<div class="_freelacers_120_body">
-									<div class="_freelacers_121_foot">
-										<a href="freelancer-detail.html" class="btn btn-theme blue light">View Profile</a>	
+						</div>
+						
+						<div class="swiper-slide">
+							<div class="col-lg-3 col-md-6 col-sm-12">
+								<div class="_freelacers_120 large">
+									<div class="jobs-like"><label class="toggler toggler-danger"><input type="checkbox"><i class="fa fa-heart"></i></label></div>
+									<div class="_freelacers_120_thumb">
+										<img src="assets/img/verify.svg" class="verified" width="15" alt="">
+										<a href="freelancer-detail.html"><img src="assets/img/team-5.jpg" class="img-fluid circle" alt=""></a>
+									</div>
+									<div class="_freelacers_120_caption">
+										<div class="_freelan_laft"><i class="ti-location-pin mr-1"></i>Kuwait City, Kuwait</div>
+										<h4><a href="freelancer-detail.html">Fahad Alaradi</a></h4>
+										<span class="_freel_spec">Social Media Personality</span>
+									</div>
+									<div class="_freelacers_120_body">
+										<div class="_freelacers_121_foot">
+											<a href="freelancer-detail.html" class="btn btn-theme blue light">View Profile</a>	
+										</div>
 									</div>
 								</div>
-							</div>
+							</div>	
 						</div>
+
+					</div>
+
+					<!-- Optional navigation -->
+					<div class="swiper-button-next"></div>
+					<div class="swiper-button-prev"></div>
+				  </div>
 						
 					</div>
 				</div>
@@ -804,6 +850,36 @@
 		<!-- ============================================================== -->
 		<!-- This page plugins -->
 		<!-- ============================================================== -->
+
+		<!-- Swiper JS -->
+		<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+		<script>
+			var swiper = new Swiper(".mySwiper", {
+			  slidesPerView: 1,
+			  spaceBetween: 20,
+			  loop: true,
+			  breakpoints: {
+				576: {
+				  slidesPerView: 1,
+				},
+				768: {
+				  slidesPerView: 2,
+				},
+				992: {
+				  slidesPerView: 3,
+				},
+				1200: {
+				  slidesPerView: 4,
+				}
+			  },
+			  navigation: {
+				nextEl: ".swiper-button-next",
+				prevEl: ".swiper-button-prev",
+			  },
+			});
+		  </script>		  
+
 
 		<script>
 			document.addEventListener("DOMContentLoaded", function () {

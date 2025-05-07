@@ -2147,7 +2147,6 @@ outline:none;
 
 /*---------- GLobal Settings: Section Heading Style ---------*/
 .sec-heading {
-	text-align:center;
     max-width: 700px;
 	margin-bottom:25px;
 }
@@ -2496,7 +2495,6 @@ ul {
 }
 
 .nav-brand {
-    padding:17px 15px;
     font-size: 24px;
 	margin-right: 1rem;
     text-decoration: none !important
@@ -3388,6 +3386,36 @@ nav a {
         transform: translate3d(0, 0, 0)
     }
 }
+
+
+.top_bg{
+    background: #001e55;
+    padding: 10px 0;
+}
+
+.top_bg a:link, .top_bg a:visited, .top_bg a:active{
+color: #c09e6a;
+text-decoration: none;
+}
+
+.top_bg a:hover{
+color: #FFFFFF;
+text-decoration: none;
+}
+
+.swiper {
+    padding: 30px 0;
+  }
+  .swiper-slide {
+    display: flex;
+    justify-content: center;
+  }
+  ._freelacers_120 {
+    width: 100%;
+    max-width: 300px;
+  }
+
+
 .nav-menu.nav-menu-social>li.add-listing {
     border-radius:0.4rem;
     top: 15px;
@@ -3396,20 +3424,20 @@ nav a {
 	background:#14b47c;
 }
 
+.align-right{
+    text-align: right;
+}
+
 
 .arabic{
-    border-radius:0.4rem;
-    position: relative;
-    color: #ffffff !important;
-	background:#002149;
+    color: #c09e6a;
     font-family:'Almarai', sans-serif !important;
-    padding: 14px 15px !important;
-    right: 10px;
+    margin-left: 30px;
+    font-size: 14px;
 }
 
 .arabic:hover{
-    background:#c19d6c;
-    color: #fff !important;
+    color: #fff;
 }
 
 .top-bar {
@@ -10434,7 +10462,7 @@ footer.skin-dark-footer ul.footer-bottom-social li a:hover, footer.skin-dark-foo
 		font-size: 2rem;
 	}
 	.hero-banner h1{
-		font-size: 4em;
+		font-size: 3em;
 		line-height: 1.17em;
 		font-weight: 800;
 	}
@@ -10532,6 +10560,7 @@ footer.skin-dark-footer ul.footer-bottom-social li a:hover, footer.skin-dark-foo
 	
 	.hero-banner.full {
 		height: 60vh;
+        margin-top: 45px;
 	}
 
 }
