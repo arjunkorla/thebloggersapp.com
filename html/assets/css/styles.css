@@ -124,7 +124,7 @@ html body .mdi-set {
   line-height: initial;
 }
 section {
-    padding: 80px 0 80px;
+    padding: 50px 0 50px;
 }
 section.min-sec{
 	padding: 80px 0 50px;
@@ -3167,7 +3167,7 @@ nav a {
 }
 
 .header {
-    background: #fff
+    background: #f4f9fd
 }
 
 .header-top {
@@ -3432,6 +3432,9 @@ text-decoration: none;
     text-align: right;
 }
 
+.mt-15{
+    margin-top: 15px;
+}
 
 .arabic{
     color: #c09e6a;
@@ -5615,7 +5618,7 @@ ul.applieded_list li .nore_applied span {
 /*------------------- Page Title Design  ------------------*/
 .page-title {
     width: 100%;
-    height: 200px;
+    height: 130px;
     text-align: left;
     display: flex;
     flex-direction: column;
@@ -6284,7 +6287,7 @@ span.time_esti {
 }
 .featured .btn.pricing_btn {
     color:#ffffff;
-    background:#005993;
+    background:#001d55;
 }
 .pricing_boxes_detail {
     width: 100%;
@@ -6322,19 +6325,19 @@ ul.pricing_lists li:before {
     color: #6179b3;
 }
 .pricing_boxes.featured {
-    background:#041b51;
+    background:#c19f6b;
 }
 .featured .pricing_thumb_title p {
-    color:#9dd8ff;
+    color:#001d55;
 }
 .featured span.time_esti {
-    color:#9dd8ff;
+    color:#001d55;
 }
 .pricing_boxes.featured ul.pricing_lists li {
-    color:#9dd8ff;
+    color:#001d55;
 }
 .pricing_boxes.featured ul.pricing_lists li:before {
-    background:#046caf;
+    background:#001d55;
     color:#ffffff;
 }
 
@@ -6786,6 +6789,9 @@ text-align: center;
     background: #ffffff;
     padding:0px;
     margin-bottom: 30px;
+    box-shadow: -2px 1px 14px 1px rgba(0,0,0,0.10);
+    -webkit-box-shadow: -2px 1px 14px 1px rgba(0,0,0,0.10);
+    -moz-box-shadow: -2px 1px 14px 1px rgba(0,0,0,0.10);
 }
 .simple-sidebar.border {
     border: 1px solid #e6eaf1;
@@ -7038,6 +7044,9 @@ span.hm_nav_clear {
     margin-bottom: 20px;
     display: flex;
     align-items: center;
+    box-shadow: -2px 1px 14px 1px rgba(0,0,0,0.10);
+    -webkit-box-shadow: -2px 1px 14px 1px rgba(0,0,0,0.10);
+    -moz-box-shadow: -2px 1px 14px 1px rgba(0,0,0,0.10);
 }
 ._tag782, .filter_group {
     flex: 1;
