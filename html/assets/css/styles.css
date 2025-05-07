@@ -157,6 +157,10 @@ section.min-half{
     height: 100%;
 }
 
+.nav_bg{
+    background: #f4f9fd;
+}
+
 .table-cell {
     display: table-cell;
     vertical-align: middle;
@@ -5628,7 +5632,7 @@ ul.applieded_list li .nore_applied span {
 .page-title.inner-page{
     width: 100%;
     height:auto;
-    padding:5rem 0;
+    padding:150px 0 0 0;
 }
 .page-title .ipt-title {
     color: #ffffff;
