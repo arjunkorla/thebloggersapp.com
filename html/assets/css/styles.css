@@ -10539,11 +10539,6 @@ footer.skin-dark-footer ul.footer-bottom-social li a:hover, footer.skin-dark-foo
     cursor: pointer;
   }
 
-  button[disabled] {
-    background: #ccc;
-    /* cursor: not-allowed; */
-  }
-
   @media (max-width: 600px) {
     .step-label {
       font-size: 12px;
