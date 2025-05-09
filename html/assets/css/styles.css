@@ -10502,13 +10502,13 @@ footer.skin-dark-footer ul.footer-bottom-social li a:hover, footer.skin-dark-foo
   }
 
   .step-item.active .step-number {
-    background: #0b85ec;
+    background: #c19f6b;
     color: #fff;
   }
 
   .step-item.active .step-label {
     font-weight: bold;
-    color: #0b85ec;
+    color: #c19f6b;
   }
 
   .step-content {
@@ -10533,7 +10533,7 @@ footer.skin-dark-footer ul.footer-bottom-social li a:hover, footer.skin-dark-foo
   button {
     padding: 10px 20px;
     border: none;
-    background: #0b85ec;
+    background: #c19f6b;
     color: white;
     border-radius: 4px;
     cursor: pointer;
@@ -10541,7 +10541,7 @@ footer.skin-dark-footer ul.footer-bottom-social li a:hover, footer.skin-dark-foo
 
   button[disabled] {
     background: #ccc;
-    cursor: not-allowed;
+    /* cursor: not-allowed; */
   }
 
   @media (max-width: 600px) {
