@@ -98,40 +98,48 @@ html {
 }
 
 /* Slideshow css start here */
-  .slider-container {
-    position: relative;
-    overflow: hidden;
-    width: 100%;
-  }
-  .slider-wrapper {
-    display: flex;
-    transition: transform 0.5s ease-in-out;
-    width: 300%; /* Adjust based on number of slides */
-  }
-  .img-fluid {
-    max-width: 100%;
-    height: auto;
-  }
-  .slider-nav {
-    position: absolute;
-    top: 50%;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    transform: translateY(-50%);
-    padding: 0 20px;
-  }
-  .slider-nav button {
-    background: rgba(0,0,0,0.5);
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    font-size: 18px;
-  }
-  .slider-nav button:hover {
-    background: rgba(0,0,0,0.8);
-  }
+    .slider-container {
+      position: relative;
+      max-width: 100%;
+      height: 60vh;
+      overflow: hidden;
+      margin-top: 120px;
+    }
+
+    .slide {
+      display: none;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-size: cover;
+      background-position: center;
+      transition: opacity 1s ease-in-out;
+    }
+
+    .slide.active {
+      display: block;
+    }
+
+    .nav-button {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: rgba(0,0,0,0.5);
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+      font-size: 18px;
+      z-index: 10;
+    }
+
+    .prev {
+      left: 20px;
+    }
+
+    .next {
+      right: 20px;
+    }
 
   /* Slideshow End here */
 
@@ -3057,7 +3065,7 @@ nav a:hover {
     color: #fff;
     text-align: center;
     border-radius: 4px;
-    background-color: #615fff;
+    background-color: #c19c66;
     transition: opacity .3s
 }
 
@@ -5715,6 +5723,7 @@ ul.applieded_list li .nore_applied span {
 --------------------------------------------------*/
 /*------------------- Page Title Design  ------------------*/
 .page-title {
+    position: relative;
     width: 100%;
     height: 130px;
     text-align: left;
@@ -5723,8 +5732,23 @@ ul.applieded_list li .nore_applied span {
     align-items: center;
     flex-wrap: wrap;
     justify-content: center;
-    background:#19242b;
+    background: url(../img/bn-2.jpg) no-repeat center center;
+    background-size: cover;
+    color: white; /* Optional: for better contrast */
+    z-index: 1;
 }
+
+.page-title::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(25, 36, 43, 0.8); 
+    z-index: -1;
+}
+
 .page-title.search-form{
     width: 100%;
     height:auto;
