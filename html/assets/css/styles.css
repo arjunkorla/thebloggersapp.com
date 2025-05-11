@@ -24,6 +24,29 @@
 /*------------------------------------------------------------
 	Page Loader
 -------------------------------------------------------------*/
+.hide_desk{display:none;}
+
+
+/*Mobile Devices.*/		
+@media all and (max-width: 480px) and (min-width: 320px){
+   .hide_mob{display:none;}
+   .hide_desk{display:block;}
+
+   .mob_text_center{
+       text-align:center !important;
+   }
+
+   .nav-header{
+    width: 100%;
+    text-align: center;
+
+   }
+
+.line_hight{
+    line-height: 48px;
+}
+
+}
 
 .no-js #loader {
     display: none;
@@ -2628,9 +2651,10 @@ nav a:hover {
     position: absolute;
     width: 24px;
     height: 2px;
-    background-color: #70798b;
+    background-color: #c09d6c;
     border-radius: 10px;
-    box-shadow: 0 .5em 0 0 #70798b, 0 1em 0 0 #70798b
+    box-shadow: 0 .5em 0 0 #c09d6c, 0 1em 0 0 #c09d6c;
+    
 }
 
 .navigation-portrait .nav-toggle {
@@ -2674,7 +2698,7 @@ nav a:hover {
     font-size: 16px;
     cursor: pointer;
     border-radius: 50%;
-    background:#2f7fe6;
+    background:#c09d6c;
     text-align: center;
     line-height: 30px;
 }
@@ -3930,7 +3954,6 @@ li.login-attri .account-drop a {
 
 
 .hero-banner {
-    flex: 0 0 100%;
       display: flex;
       padding: 50px 0;
       width: 100%;
@@ -11183,7 +11206,7 @@ footer.skin-dark-footer ul.footer-bottom-social li a:hover, footer.skin-dark-foo
 		min-height: auto;
 	}
 	.call-to-act-caption {
-		padding: 5em 1em;
+		padding: 20px 1em;
 		text-align: center;
 	}
 	.call-to-act-caption h2 {
