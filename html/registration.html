@@ -183,7 +183,7 @@
                                         <div class="pricing_boxes_middle">
                                             <h2 class="pricing_rate">KD 29</h2>
                                             <span class="time_esti">per month</span>
-                                            <a href="#" class="btn pricing_btn">Get Vocher</a>
+                                            <a href="#" class="btn pricing_btn" id="nextBtn" onclick="changeStep(1)">Get Vocher</a>
                                         </div>
                                         <div class="pricing_boxes_detail">
                                             <ul class="pricing_lists">
@@ -210,7 +210,7 @@
                                         <div class="pricing_boxes_middle">
                                             <h2 class="pricing_rate">KD 99</h2>
                                             <span class="time_esti">Per 1 Year</span>
-                                            <a href="#" class="btn pricing_btn">Get Vocher</a>
+                                            <a href="#" class="btn pricing_btn" id="nextBtn" onclick="changeStep(1)">Get Vocher</a>
                                         </div>
                                         <div class="pricing_boxes_detail">
                                             <ul class="pricing_lists">
@@ -237,7 +237,7 @@
                                         <div class="pricing_boxes_middle">
                                             <h2 class="pricing_rate">KD 199</h2>
                                             <span class="time_esti">Lifetime</span>
-                                            <a href="#" class="btn pricing_btn">Get Vocher</a>
+                                            <a href="#" class="btn pricing_btn" id="nextBtn" onclick="changeStep(1)">Get Vocher</a>
                                         </div>
                                         <div class="pricing_boxes_detail">
                                             <ul class="pricing_lists">
@@ -260,9 +260,9 @@
                                 <div class="modal-body">
                                 
                                 <div class="payment-form form-section" id="payment-form">
-                                    <form onsubmit="handlePayment(event)">
+                        <form onsubmit="handlePayment(event)">
                             
-                                        <div class="col-lg-4 col-md-12 col-sm-12">
+                                        <div class="col-lg-12 col-md-12 col-sm-12">
                                             <div class="row">
                                                 <div class="col-lg-12 col-md-12 col-sm-12">
                                                     <div class="product-wrap">
@@ -271,14 +271,14 @@
                                                             <li><strong>Total</strong> KD 319</li>
                                                             <li><strong>Subtotal</strong> KD 319</li>
                                                             <li><strong>Tax</strong>KD 10</li>
-                                                            <li><strong>Total</strong>KD 329</li>
+                                                            <li><strong>Total</strong> KD 329</li>
                                                         </ul>
                                                     </div>
                                                 </div>							
                                             </div>
                                         </div>
                             
-                            <div class="panel-group pay_opy980" id="payaccordion">
+                                        <div class="panel-group pay_opy980" id="payaccordion">
 
                                 <!-- Pay By Strip -->
 									<div class="panel panel-default">
@@ -398,10 +398,8 @@
 									  </div>
 									</div>
                                 </div>
-                                
-                                    </form>
+                        </form>
                                 </div>
-
                                 
                                 <script>
                                     function handlePayment(event) {
