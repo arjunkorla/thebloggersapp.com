@@ -8,10 +8,17 @@
 		
         <!-- All Plugins Css -->
         <link href="assets/css/plugins.css" rel="stylesheet">
-		 
 
         <!-- Custom CSS -->
         <link href="assets/css/styles.css" rel="stylesheet">
+
+		<!-- Select2 CSS -->
+		<link href="assets/css/select2.min.css" rel="stylesheet" />
+
+		<!-- Favicon -->
+		<link rel="apple-touch-icon" href="assets/img/fav.png">
+		<link rel="shortcut icon" href="assets/img/fav.png" type="image/x-icon">
+
     </head>
 	
     <body class="blue-skin">
@@ -29,19 +36,16 @@
 				<div class="container">
 					<p class="mb-30"><img src="assets/img/logo-light.png" alt="" class="index_logo"></p>
 
-					<p>&nbsp;</p>
-
 					<h2>Connecting Businesses with Influencers</h2>
 					<p class="lead">Discover top influencers and hire the perfect match for your business.</p>
-					<div class="mt-5">
 						<div class="row m-0 justify-content-center">
-							<div class="col-lg-10 col-md-10">
-								<form class="search-big-form shadows">
+							<div class="col-lg-6 col-md-6">
+								<form class="form-box">
 									<div class="row m-0">
-										<div class="col-lg-3 col-md-5 col-sm-12 p-0">
-											<div class="form-group">
+										<div class="col-lg-12 col-md-12 col-sm-12">
+											<div class="form-group m-0">
 												<i class="ti-flag"></i>
-												<select class="form-control b-0 l-radius" data-placeholder="Select Country">
+												<select class="form-control b-0" data-placeholder="Select Country">
 													<option>Select Country</option>
 													<option value="1">Kuwait</option>
 													<option value="2">Saudi Arabia</option>
@@ -53,11 +57,10 @@
 											</div>
 										</div>
 										
-										<div class="col-lg-3 col-md-4 col-sm-12 p-0">
-											<div class="form-group">
+										<div class="col-lg-12 col-md-12 col-sm-12">
+											<div class="form-group m-0">
 												<i class="ti-layers-alt"></i>
-												<select class="form-control b-0" data-placeholder="Select Category">
-													<option>Category</option>
+												<select class="form-control b-0 select2-multi" name="category[]" multiple="multiple" data-placeholder="Select Category">
 													<option value="1">Fashion</option>
 													<option value="2">Travel</option>
 													<option value="3">Food</option>
@@ -68,8 +71,8 @@
 											</div>
 										</div>
 
-										<div class="col-lg-3 col-md-4 col-sm-12 p-0">
-											<div class="form-group">
+										<div class="col-lg-12 col-md-12 col-sm-12">
+											<div class="form-group m-0">
 												<i class="ti-money"></i>
 												<select class="form-control b-0" data-placeholder="Select Category">
 													<option>Select Budget</option>
@@ -81,27 +84,19 @@
 												</select>
 											</div>
 										</div>
-
-										<div class="col-lg-2 col-md-5 col-sm-12 p-0">
-											<div class="form-group">
-												<i class="ti-search"></i>
-												<input type="text" class="form-control b-0 b-r" placeholder=" Keywords">
-											</div>
-										</div>
 										
-										<div class="col-lg-1 col-md-3 col-sm-12 p-0">
-											<button type="button" class="btn theme-bg r-radius full-width" onclick="window.location.href='explore.html'">Search</button>
+										<div class="col-lg-12 col-md-12 col-sm-12 mt-30">
+											<button type="button" class="btn theme-bg full-width" onclick="window.location.href='explore.html'">Search</button>
 										</div>
 									</div>
 								</form>	
 							</div>
 
-							<div class="col-lg-12 col-md-12 col-sm-12 mt-50">
+							<div class="col-lg-12 col-md-12 col-sm-12 mt-30">
 								<button class="btn theme-bg radius" onclick="window.location.href='registration.html'">
 									<i class="ti-user"></i>  Register / Login</button>
 							</div>
 						</div>
-					</div>
 				</div>
 			</div>
 			<!-- ============================ Hero Banner End ================================== -->
@@ -124,9 +119,22 @@
 		<script src="assets/js/materialize.min.js"></script>
 		<script src="assets/js/metisMenu.min.js"></script>
 		<script src="assets/js/custom.js"></script>
+
+		<!-- jQuery (required for Select2) -->
+		<!-- <script src="assets/js/jquery-3.6.0.min.js"></script> -->
+		<script src="assets/js/select2.min.js"></script>
+
 		<!-- ============================================================== -->
 		<!-- This page plugins -->
 		<!-- ============================================================== -->
-		
+
+		<script>
+			$(document).ready(function() {
+				$('.select2-multi').select2({
+					placeholder: "Select Category",
+					width: '100%' // ensures full-width dropdown
+				});
+			});
+		</script>
 	</body>
 </html>

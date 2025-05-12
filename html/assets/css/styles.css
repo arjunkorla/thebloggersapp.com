@@ -184,7 +184,9 @@ a {
 
 a:hover,
 a:focus, .btn, .btn:hover, .btn:focus{
-  text-decoration: none; }
+  text-decoration: none;
+  background: #c09f68;
+}
 
 a.link {
   color: #3e4555; }
@@ -772,7 +774,7 @@ html body .b-all {
   color: #3e4555 !important; }
 
 html body .text-blue {
-  color: #02bec9; }
+  color: #c09e69; }
 
 html body .text-purple {
   color: #615FFF; }
@@ -2344,7 +2346,7 @@ textarea.form-control{
 }
 .select2-container--default .select2-selection--multiple{
     color: #626a70;
-    line-height:48px;
+    line-height:35px;
     text-align: left;
     padding: 0 15px;
 }
@@ -2352,7 +2354,7 @@ textarea.form-control{
     background-color: #fff;
     border-radius: 0;
     border: 1px solid #e0ecf5;
-    height:56px;
+    height:67px;
 }
 .with-light .select2-container--default .select2-selection--multiple{
 	border: 1px solid #e6eaf1;
@@ -2366,7 +2368,7 @@ textarea.form-control{
     cursor: default;
     float: left;
     margin-right: 5px;
-    margin-top: 10px;
+    margin-top: 15px;
     padding: 0 5px;
     line-height: 2.5;
     font-size: 13px;
@@ -2536,7 +2538,7 @@ Header Navigation Styles
 .nav-brand:focus,
 .nav-brand:hover,
 .nav-menu>li>a {
-    color:#2D4379;
+    color:#19242b;
 }
 
 .menu__list,
@@ -3534,6 +3536,10 @@ text-decoration: none;
     margin-top: 15px;
 }
 
+.mt-30{
+    margin-top: 30px;
+}
+
 .mt-50{
     margin-top: 50px;
 }
@@ -3784,7 +3790,7 @@ li.header-search {
 }
 
 .dark-text .nav-brand, .header-transparent.dark-text .nav-brand:focus, .header-transparent.dark-text .nav-brand:hover, .header-transparent.dark-text .nav-menu>li>a {
-    color: #00305c;
+    color: #19242b;
 }
 .header-transparent .nav-menu .submenu-indicator-chevron {
     border-color: transparent #ffffff #ffffff transparent;
@@ -3802,7 +3808,7 @@ li.header-search {
     border-color: transparent #00305c #00305c transparent;
 }
 .header-transparent.dark-text .nav-menu>li>a:hover, .header-transparent.dark-text .nav-menu>li>a:focus {
-    color:#615fff;
+    color:#c09e6a;
 }
 }
 
@@ -7155,7 +7161,7 @@ span.hm_nav_clear {
 }
 .btn-theme-2:hover, .btn-theme-2:focus{
 	color:#ffffff;
-	background:#14b47c;
+	background:#c19f6b;
 }
 ._filt_tag786 {
     background: #ffffff;
@@ -8203,8 +8209,11 @@ a.bl-continue:before {
 }
 .blog-cates {
     position: relative;
-    padding: 0 20px 20px;
+    padding: 10px 0 0 0;
 }
+
+.p-10{padding: 10px !important;}
+
 .blog-cates ul li {
     list-style: none;
     display: inline-block;
