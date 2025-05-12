@@ -185,7 +185,7 @@ a {
 a:hover,
 a:focus, .btn, .btn:hover, .btn:focus{
   text-decoration: none;
-  background: #c09f68;
+  color: #c09f68;
 }
 
 a.link {
@@ -2636,7 +2636,8 @@ nav a {
 nav a,
 nav a:focus,
 nav a:hover {
-    outline: 0
+    outline: 0;
+    color:#c09f68;
 }
 
 .navigation-portrait .nav-logo>img {
