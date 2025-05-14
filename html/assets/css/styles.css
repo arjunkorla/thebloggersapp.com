@@ -157,11 +157,14 @@ html {
 
 .img_50:hover{opacity: 1;}
 
-
-
-.clear50x{
+.clear40x{
     clear: both;
-    height: 50px;
+    height:40px;
+}
+
+.clear130x{
+    clear: both;
+    height: 130px;
 }
 
 a {
@@ -3506,6 +3509,11 @@ text-decoration: none;
 .top_bg a:hover{
 color: #FFFFFF;
 text-decoration: none;
+}
+
+.home-top-bg{
+    background:rgba(255, 255, 255, 0.9);
+    padding: 10px 0;
 }
 
 .swiper {
