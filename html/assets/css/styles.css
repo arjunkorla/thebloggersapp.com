@@ -97,6 +97,10 @@ html {
     padding: 20px 0;
 }
 
+.custome-select{
+    border: none !important;border-radius:0 !important;
+}
+
 /* Slideshow css start here */
     .slider-container {
       position: relative;

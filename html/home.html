@@ -15,6 +15,9 @@
 		<!-- Swiper CSS -->
 		<link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
 
+		<!-- Select2 CSS -->
+		<link href="assets/css/select2.min.css" rel="stylesheet" />
+
 		<!-- Favicon -->
 		<link rel="apple-touch-icon" href="assets/img/fav.png">
 		<link rel="shortcut icon" href="assets/img/fav.png" type="image/x-icon">
@@ -161,7 +164,7 @@
 								<div class="col-lg-3 col-md-4 col-sm-12 p-0">
 									<div class="form-group">
 										<i class="ti-layers-alt"></i>
-										<select class="form-control b-0" data-placeholder="Select Category">
+										<select class="form-control b-0 select2-multi custome-select" name="category[]" multiple="multiple" data-placeholder="Select Category">
 											<option>Category</option>
 											<option value="1">Fashion</option>
 											<option value="2">Travel</option>
@@ -1058,6 +1061,15 @@
 				// Initialize
 				showSlide(currentSlide);
 				startAutoSlide();
+		</script>
+
+		<script>
+			$(document).ready(function() {
+				$('.select2-multi').select2({
+					placeholder: "Select Category",
+					width: '100%' // ensures full-width dropdown
+				});
+			});
 		</script>
 
 	</body>
