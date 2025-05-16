@@ -77,13 +77,13 @@
 										<div class="nav-menus-wrapper">
 											<ul class="nav-menu">
 												<li><a href="home.html">Home</a></li>
-												<li><a href="explore.html">Explore</a></li>
-												<li><a href="packages.html">Packages</a></li>
-												<li><a href="categories.html">Categories</a></li>
 												<li><a href="aboutus.html">About Us</a></li>
-												<li><a href="news.html">News & Events</a></li>
-												<li><a href="contact.html">Contact Us</a></li>
+												<li><a href="explore.html">Explore Bloggers</a></li>
+												<li><a href="packages.html">Packeges</a></li>
 												<li><a href="support.html">Support Small Business</a></li>
+												<li><a href="news.html">News & Events</a></li>
+												<li><a href="free-bloggers.html">Free Advertising</a></li>
+												<li><a href="contact.html">Contact Us</a></li>
 											</ul>
 										</div>
 									</nav>
@@ -92,7 +92,7 @@
 							</div>
 						</div>
 
-						<div class="home-top-bg" style="display: none;">
+						<div class="home-top-bg">
 							<div class="container">
 								<div class="row">
 									<div class="col-lg-12 col-md-12 col-sm-12">
@@ -106,13 +106,13 @@
 											<div class="nav-menus-wrapper hide_mob">
 												<ul class="nav-menu">
 													<li><a href="home.html">Home</a></li>
-													<li><a href="explore.html">Explore</a></li>
-													<li><a href="packages.html">Packages</a></li>
-													<li><a href="categories.html">Categories</a></li>
 													<li><a href="aboutus.html">About Us</a></li>
-													<li><a href="news.html">News & Events</a></li>
-													<li><a href="contact.html">Contact Us</a></li>
+													<li><a href="explore.html">Explore Bloggers</a></li>
+													<li><a href="packages.html">Packeges</a></li>
 													<li><a href="support.html">Support Small Business</a></li>
+													<li><a href="news.html">News & Events</a></li>
+													<li><a href="free-bloggers.html">Free Advertising</a></li>
+													<li><a href="contact.html">Contact Us</a></li>
 												</ul>
 											</div>
 										</nav>
@@ -165,14 +165,14 @@
 
 										<div class="col-lg-12 col-md-12 col-sm-12">
 											<div class="form-group">
-												<select class="form-control b-0" data-placeholder="Select Category">
-													<option>Select Budget</option>
-													<option value="1">KD 0 - KD 100</option>
-													<option value="2">KD 100 - KD 500</option>
-													<option value="3">KD 500 - KD 1000</option>
-													<option value="4">KD 1000 - KD 5000</option>
-													<option value="5">KD 5000 - KD 10000</option>
-												</select>
+												<div class="widget-boxed-header">
+													<h4>Budget Range</h4>
+												</div>
+												<div class="clerfix"></div>
+
+												<div class="rg-slider mt-15">
+													<input type="text" class="js-range-slider" name="my_range" value="" />
+												</div>
 											</div>
 										</div>
 
@@ -227,6 +227,17 @@
 					width: '100%' // ensures full-width dropdown
 				});
 			});
+		</script>
+
+		<script>
+				$(".js-range-slider").ionRangeSlider({
+					type: "double",
+					min: 0,
+					max:1000,
+					from:30,
+					to:80,
+					grid: true
+				});
 		</script>
 	</body>
 </html>

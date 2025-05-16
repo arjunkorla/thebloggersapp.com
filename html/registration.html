@@ -28,6 +28,98 @@
         <!-- ============================================================== -->    
         <div id="main-wrapper">
             <div class="hero-banner full3 image-center" style="background:#0b85ec url(assets/img/banner-4.jpg) no-repeat;" data-overlay="7">
+
+                <div class="container-fluid">
+					<!-- Start Navigation -->
+					<div class="header header-transparent dark-text">
+
+						<div class="top_bg hide_mob">
+							<div class="container">
+								<div class="row">
+									<div class="col-lg-6 col-md-6 col-sm-12">
+										<ul class="footer-bottom-social">
+											<li><a href="#"><i class="ti-facebook"></i></a></li>
+											<li><a href="#"><i class="ti-twitter"></i></a></li>
+											<li><a href="#"><i class="ti-instagram"></i></a></li>
+											<li><a href="#"><i class="ti-linkedin"></i></a></li>
+										</ul>
+									</div>
+
+									<div class="col-lg-6 col-md-6 col-sm-12 align-right">
+										<a href="registration.html">
+											<i class="ti-user mr-1"></i> Signin / Signup
+										</a>
+										<a href="arindex.html" class="arabic"> العربية <i class="ti-comment mr-1"></i></a>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="top_bg hide_desk">
+							<div class="container-fluid">
+								<div class="row">
+									<div class="col-lg-6 col-md-6 col-8 line_hight">
+										<a href="registration.html">
+											<i class="ti-user mr-1"></i> Signin / Signup
+										</a>
+										<a href="arindex.html" class="arabic"> العربية <i class="ti-comment mr-1"></i></a>
+									</div>
+									<div class="col-lg-6 col-md-6 col-4 align-right">
+										<nav id="navigation" class="navigation navigation-landscape">
+										<div class="nav-header">
+											<div class="nav-toggle"></div>
+										</div>
+										<div class="nav-menus-wrapper">
+											<ul class="nav-menu">
+												<li><a href="home.html">Home</a></li>
+												<li><a href="aboutus.html">About Us</a></li>
+												<li><a href="explore.html">Explore Bloggers</a></li>
+												<li><a href="packages.html">Packeges</a></li>
+												<li><a href="support.html">Support Small Business</a></li>
+												<li><a href="news.html">News & Events</a></li>
+												<li><a href="free-bloggers.html">Free Advertising</a></li>
+												<li><a href="contact.html">Contact Us</a></li>
+											</ul>
+										</div>
+									</nav>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="home-top-bg">
+							<div class="container">
+								<div class="row">
+									<div class="col-lg-12 col-md-12 col-sm-12">
+										<nav id="navigation" class="navigation navigation-landscape">
+											<div class="nav-header">
+												<a class="nav-brand mob_text_center" href="index.html">
+													<img src="assets/img/logo.png" class="logo" alt="" />
+												</a>
+												<div class="nav-toggle"></div>
+											</div>
+											<div class="nav-menus-wrapper hide_mob">
+												<ul class="nav-menu">
+													<li><a href="home.html">Home</a></li>
+                                                    <li><a href="aboutus.html">About Us</a></li>
+                                                    <li><a href="explore.html">Explore Bloggers</a></li>
+                                                    <li><a href="packages.html">Packeges</a></li>
+                                                    <li><a href="support.html">Support Small Business</a></li>
+                                                    <li><a href="news.html">News & Events</a></li>
+                                                    <li><a href="free-bloggers.html">Free Advertising</a></li>
+                                                    <li><a href="contact.html">Contact Us</a></li>
+												</ul>
+											</div>
+										</nav>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- End Navigation -->
+
+				<div class="clear130x"></div>
+
 				<div class="container">
                     <div class="row">
                         <div class="col-lg-12 col-md-12 col-sm-12">
@@ -97,12 +189,30 @@
             
                                                 <div class="form-group">
                                                     <label>Email Address</label>
-                                                    <input type="email" class="form-control" placeholder="Email">
+                                                    <input type="email" class="form-control" placeholder="Email Address">
+                                                </div>
+
+                                                <div class="form-group">
+                                                    <label>Mobile Number</label>
+                                                    <input type="password" class="form-control" placeholder="Mobile Number">
                                                 </div>
             
                                                 <div class="form-group">
                                                     <label>Password</label>
                                                     <input type="password" class="form-control" placeholder="Create Password">
+                                                </div>
+
+                                                <div class="form-group">
+                                                    <label>Country</label>
+                                                    <select class="form-control" data-placeholder="Select Country">
+                                                        <option>Select Country</option>
+                                                        <option value="1">Kuwait</option>
+                                                        <option value="2">Saudi Arabia</option>
+                                                        <option value="3">UAE</option>
+                                                        <option value="4">Qatar</option>
+                                                        <option value="5">Bahrain</option>
+                                                        <option value="6">Oman</option>
+												    </select>
                                                 </div>
             
                                                 <!-- Business-specific field -->
@@ -172,7 +282,7 @@
                             </div>
 
                             <div class="step-content" id="step2" style="max-width: 100%;">
-                                <div class="row">
+                                <div class="row justify-content-center">
 
                                 <!-- Single Pricing Box -->
                                 <div class="col-lg-4 col-md-4 col-sm-12">
@@ -212,7 +322,7 @@
                                         </div>
                                         <div class="pricing_boxes_middle">
                                             <h2 class="pricing_rate">KD 99</h2>
-                                            <span class="time_esti">Per 1 Year</span>
+                                            <span class="time_esti">Per Month</span>
                                             <a href="#" class="btn pricing_btn" id="nextBtn" onclick="changeStep(1)">Get Vocher</a>
                                         </div>
                                         <div class="pricing_boxes_detail">
@@ -228,32 +338,6 @@
                                     </div>
                                 </div>
                                 
-                                <!-- Single Pricing Box -->
-                                <div class="col-lg-4 col-md-4 col-sm-12">
-                                    <div class="pricing_boxes">
-                                        <div class="pricing_boxes_header">
-                                            <div class="pricing_thumb_title">
-                                                <h4>Bronze</h4>
-                                                <p>The Recommonded Package</p>
-                                            </div>
-                                        </div>
-                                        <div class="pricing_boxes_middle">
-                                            <h2 class="pricing_rate">KD 199</h2>
-                                            <span class="time_esti">Lifetime</span>
-                                            <a href="#" class="btn pricing_btn" id="nextBtn" onclick="changeStep(1)">Get Vocher</a>
-                                        </div>
-                                        <div class="pricing_boxes_detail">
-                                            <ul class="pricing_lists">
-                                                <li>Full access to all core features</li>
-                                                <li>20 Bloggers</li>
-                                                <li>Share access with up to 3 guests</li>
-                                                <li>Priority email support (24/7)</li>
-                                                <li>Advanced analytics dashboard</li>
-                                                <li>Limited brand collaboration offers</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
                                 </div>
                             </div>
 
