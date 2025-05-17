@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Registration Flow</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .step { display: none; }
+    .step.active { display: block; }
+  </style>
+</head>
+<body>
+<div class="container mt-5">
+  <h2 class="mb-4">Register</h2>
+
+  <!-- Step 1: User Info -->
+  <div class="step step-1 active">
+    <form id="registrationForm">
+      <div class="mb-3">
+        <label class="form-label">User Type</label>
+        <div>
+          <label class="me-3"><input type="radio" name="userType" value="blogger"> Blogger</label>
+          <label><input type="radio" name="userType" value="business"> Business</label>
+        </div>
+      </div>
+      <div class="mb-3"><label>Name</label><input type="text" class="form-control" required></div>
+      <div class="mb-3"><label>Email</label><input type="email" class="form-control" required></div>
+      <div class="mb-3"><label>Mobile</label><input type="tel" class="form-control" required></div>
+      <div class="mb-3"><label>Password</label><input type="password" class="form-control" required></div>
+      <div class="mb-3"><label>Country</label><input type="text" class="form-control" required></div>
+      <button type="button" class="btn btn-primary" id="nextBtn">Next</button>
+    </form>
+  </div>
+
+  <!-- Step 2: Blogger Packages -->
+  <div class="step step-2-blogger">
+    <h4>Select a Blogger Package</h4>
+    <div class="mb-3">
+      <label><input type="radio" name="bloggerPackage" value="free"> Free Category</label><br>
+      <label><input type="radio" name="bloggerPackage" value="normal"> Normal</label>
+    </div>
+
+    <!-- Free Package Fields -->
+    <div id="freeFields" class="d-none">
+      <div class="mb-3"><label>Profile Picture</label><input type="file" class="form-control"></div>
+      <div class="mb-3"><label>Instagram Account</label><input type="text" class="form-control"></div>
+    </div>
+
+    <!-- Normal Package Fields -->
+    <div id="normalFields" class="d-none">
+      <div class="mb-3"><label>Price for Gold</label><input type="number" class="form-control"></div>
+      <div class="mb-3"><label>Price for Silver</label><input type="number" class="form-control"></div>
+      <div class="mb-3">
+        <label>Select Categories</label>
+        <select class="form-control" multiple>
+          <option>Fashion</option>
+          <option>Travel</option>
+          <option>Food</option>
+          <option>Tech</option>
+        </select>
+      </div>
+      <div class="mb-3"><label>Profile Picture</label><input type="file" class="form-control"></div>
+      <div class="mb-3"><label>Instagram Account</label><input type="text" class="form-control"></div>
+    </div>
+
+    <button type="submit" class="btn btn-success mt-3">Submit</button>
+  </div>
+
+  <!-- Step 2: Business Packages -->
+  <div class="step step-2-business">
+    <h4>Select a Business Package</h4>
+    <div class="mb-3">
+      <label><input type="radio" name="businessPackage" value="gold"> Gold</label><br>
+      <label><input type="radio" name="businessPackage" value="silver"> Silver</label>
+    </div>
+    <button type="submit" class="btn btn-success mt-3">Proceed to Payment</button>
+  </div>
+</div>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const nextBtn = document.getElementById("nextBtn");
+  const step1 = document.querySelector(".step-1");
+  const bloggerStep = document.querySelector(".step-2-blogger");
+  const businessStep = document.querySelector(".step-2-business");
+
+  const freeFields = document.getElementById("freeFields");
+  const normalFields = document.getElementById("normalFields");
+
+  let selectedUserType = null;
+
+  // Move to Step 2
+  nextBtn.addEventListener("click", function () {
+    const userTypeRadio = document.querySelector('input[name="userType"]:checked');
+    if (!userTypeRadio) {
+      alert("Please select a user type.");
+      return;
+    }
+    selectedUserType = userTypeRadio.value;
+
+    step1.classList.remove("active");
+    if (selectedUserType === "blogger") {
+      bloggerStep.classList.add("active");
+    } else {
+      businessStep.classList.add("active");
+    }
+  });
+
+  // Show/Hide Blogger Package Fields
+  const bloggerRadios = document.querySelectorAll('input[name="bloggerPackage"]');
+  bloggerRadios.forEach(radio => {
+    radio.addEventListener("change", function () {
+      if (this.value === "free") {
+        freeFields.classList.remove("d-none");
+        normalFields.classList.add("d-none");
+      } else if (this.value === "normal") {
+        normalFields.classList.remove("d-none");
+        freeFields.classList.add("d-none");
+      }
+    });
+  });
+});
+</script>
+</body>
+</html>
