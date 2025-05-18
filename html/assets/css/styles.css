@@ -3600,6 +3600,10 @@ text-decoration: none;
     margin-top: 15px;
 }
 
+.mt-10{
+    margin-top: 10px;
+}
+
 .mt-30{
     margin-top: 30px;
 }
@@ -4937,6 +4941,25 @@ a._5gt9:hover img {
     margin: 15px 0 0 0;
 }
 
+.prices .gold{
+    background: #f4f5f7;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    font-size: 14px;
+    color: #7A88A8;
+}
+
+.prices .silver{
+    background: #f4f5f7;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.prices .silver strong{
+    color: #19242b !important;
+}
+
 /*------------- Freelancers Design -----------------*/
 ._freelacers_120 {
     position: relative;
@@ -5236,11 +5259,12 @@ img._featured_jbs {
     background: #f4f5f7;
     display: inline-flex;
     padding: 0px 13px;
-    height: 25px;
+    height: 40px;
     align-items: center;
     justify-content: center;
     margin-top: 4px;
     border-radius: 3px;
+    line-height: 15px;
 }
 ._jb_types.fulltime_lite {
     background: rgba(51, 187, 56,0.1);
@@ -5251,12 +5275,12 @@ img._featured_jbs {
     color:#ff9800;
 }
 ._jb_types.internship_lite {
-    background: rgba(4, 158, 230,0.1);
-    color:#049ee6;
+    background: rgba(73, 73, 73,0.1);
+    color:#494949;
 }
 ._jb_types.remote {
-    background: rgba(121, 119, 249,0.1);
-    color:#7977f9;
+    background: rgba(191, 157, 107,0.1);
+    color:#c19d6c;
 }
 ._times_jb {
     font-size: 12px;
@@ -7366,8 +7390,8 @@ ul.jbx_info_list li .jb_types {
     color: #ffffff;
 }
 .jb_types.remote {
-    background: #837bf5;
-    color: #ffffff;
+    background: #e4d0b6;
+    color: #c19d6c;
 }
 ul._flex_btn {
     margin: 0;
