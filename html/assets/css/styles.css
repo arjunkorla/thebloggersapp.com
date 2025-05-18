@@ -471,9 +471,12 @@ html body .db {
   border-radius: 100%; }
 
 .theme-cl{
-	color:#df3411 !important;
+	color:#c19f6b !important;
 }
 .theme-cl-2{
+	color:#19242b;
+}
+.theme-cl-3{
 	color:#19242b;
 }
 .theme-bg{
