@@ -5278,6 +5278,17 @@ img._featured_jbs {
     background: rgba(73, 73, 73,0.1);
     color:#494949;
 }
+
+._jb_types.internship_lite a:link, ._jb_types.internship_lite a:visited, ._jb_types.internship_lite a:active{
+    color:#494949;
+    text-decoration: none;
+}
+
+._jb_types.internship_lite a:hover{
+    color:#000;
+    text-decoration: none;
+}
+
 ._jb_types.remote {
     background: rgba(191, 157, 107,0.1);
     color:#c19d6c;
