@@ -4891,6 +4891,7 @@ a._5gt9:hover img {
     font-size: 17px;
     color: #8e95b9;
 }
+
 ._110_foot_left {
     display: flex;
     align-items: center;
@@ -4922,9 +4923,15 @@ a._5gt9:hover img {
     margin-right: 4px;
 }
 ._oi0po strong {
-    margin-left: 13px;
     font-size: 17px;
     color: #df3411;
+}
+
+.prices{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    margin: 15px 0 0 0;
 }
 
 /*------------- Freelancers Design -----------------*/
