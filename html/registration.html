@@ -284,7 +284,7 @@
                                         <div class="pricing_boxes_middle">
                                             <h2 class="pricing_rate">KD 29</h2>
                                             <span class="time_esti">per month</span>
-                                            <a href="#" class="btn pricing_btn" id="nextBtn" onclick="changeStep(1)">Get Vocher</a>
+                                            <a href="#" class="btn pricing_btn"  onclick="changeStep(1)">Get Vocher</a>
                                         </div>
                                         <div class="pricing_boxes_detail">
                                             <ul class="pricing_lists">
@@ -311,7 +311,7 @@
                                         <div class="pricing_boxes_middle">
                                             <h2 class="pricing_rate">KD 99</h2>
                                             <span class="time_esti">Per Month</span>
-                                            <a href="#" class="btn pricing_btn" id="nextBtn" onclick="changeStep(1)">Get Vocher</a>
+                                            <a href="#" class="btn pricing_btn" onclick="changeStep(1)">Get Vocher</a>
                                         </div>
                                         <div class="pricing_boxes_detail">
                                             <ul class="pricing_lists">
@@ -345,8 +345,8 @@
                                                         <ul>
                                                             <li><strong>Total</strong> KD 319</li>
                                                             <li><strong>Subtotal</strong> KD 319</li>
-                                                            <li><strong>Tax</strong>KD 10</li>
-                                                            <li><strong>Total</strong> KD 329</li>
+                                                            <li><strong>Tax</strong>KD 0</li>
+                                                            <li><strong>Total</strong> KD 319</li>
                                                         </ul>
                                                     </div>
                                                 </div>							
@@ -362,15 +362,21 @@
 												<a data-toggle="collapse" role="button" data-parent="#payaccordion" href="#stripePay" aria-expanded="false"  aria-controls="stripePay" class="">KNET<img src="assets/img/knet.png" class="img-fluid" alt=""></a>
 											</h4>
 										</div>
-										<div id="stripePay" class="collapse show" aria-labelledby="stripes" data-parent="#payaccordion">
+										<div id="stripePay" class="collapse" aria-labelledby="stripes" data-parent="#payaccordion">
 											<div class="panel-body">
 												<form>
 											
 													<div class="row">
 														<div class="col-lg-6 col-md-6 col-sm-12">
 															<div class="form-group">
-																<label>Card Holder Name</label>
-																<input type="text" class="form-control with-light" placeholder="Cardholder's Name">
+																<label>Select Your Bank</label>
+                                                                <select name="" id="" class="form-control with-light">
+                                                                    <option value="">National Bank of Kuwait</option>
+                                                                    <option value="">Commercial Bank of Kuwait</option>
+                                                                    <option value="">Gulf Bank</option>
+                                                                    <option value="">Al Ahli Bank of Kuwait</option>
+                                                                    <option value="">Burgan Bank</option>
+                                                                </select>
 															</div>
 														</div>
 														
@@ -404,7 +410,7 @@
 														
 														<div class="col-lg-12 col-md-12 col-sm-12">
 															<div class="form-group text-center">
-																<a href="#" class="btn dark-2 full-width">Pay 202.00 KD</a>
+																<a href="#" class="btn dark-2 full-width">Pay 319.00 KD</a>
 															</div>
 														</div>
 														
