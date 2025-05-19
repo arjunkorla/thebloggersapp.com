@@ -15,6 +15,9 @@
         <!-- Favicon -->
 		<link rel="apple-touch-icon" href="assets/img/fav.png">
 		<link rel="shortcut icon" href="assets/img/fav.png" type="image/x-icon">
+
+        <!-- Select2 CSS -->
+		<link href="assets/css/select3.min.css" rel="stylesheet" />
     </head>
 	
     <body class="blue-skin">
@@ -277,7 +280,7 @@
                                     <div class="pricing_boxes">
                                         <div class="pricing_boxes_header">
                                             <div class="pricing_thumb_title">
-                                                <h4>Silver</h4>
+                                                <h4>Free</h4>
                                                 <p>The Basic Package</p>
                                             </div>
                                         </div>
@@ -304,7 +307,7 @@
                                     <div class="pricing_boxes featured">
                                         <div class="pricing_boxes_header">
                                             <div class="pricing_thumb_title">
-                                                <h4>Gold</h4>
+                                                <h4>Normal</h4>
                                                 <p>The Popular Package</p>
                                             </div>
                                         </div>
@@ -334,14 +337,60 @@
                             <div class="modal-content" id="registermodal">
                                 <div class="modal-body">
                                 
-                                <div class="payment-form form-section" id="payment-form">
+                    <div class="payment-form form-section" id="payment-form">
                         <form onsubmit="handlePayment(event)">
-                            
+
+                             <form>
+                                        <div class="row">
+                                            <div class="col-lg-6 col-md-6 form-group">
+                                                <label>Select Package</label>
+                                                <div class="form-group mb-1">
+                                                    <input id="e2" class="radio-custom" name="jtype" type="radio" checked>
+                                                    <label for="e2" class="radio-custom-label">Gold Package Price KD 97.00</label>
+                                                </div>
+                                                <div class="form-group">
+                                                    <input id="e3" class="radio-custom" name="jtype" type="radio">
+                                                    <label for="e3" class="radio-custom-label">Gold Package Price KD 45.00</label>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                                <div class="form-group">
+                                                    <label>Select Categories</label>
+                                                    <select class="form-control select2-multi" name="category[]" multiple="multiple" data-placeholder="Select Category" style="height: 56px !important;">
+                                                        <option>Category</option>
+                                                        <option value="1">Fashion</option>
+                                                        <option value="2">Travel</option>
+                                                        <option value="3">Food</option>
+                                                        <option value="4">Lifestyle</option>
+                                                        <option value="5">Fitness</option>
+                                                        <option value="6">Technology</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                    
+                                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                                <div class="form-group">
+                                                    <label>Upload Profile Picture</label>
+                                                    <input type="file" class="form-control with-light">
+                                                </div>
+                                            </div>
+                                    
+                                            <div class="col-lg-6 col-md-6 col-sm-6">
+                                                <div class="form-group">
+                                                    <label>Instagram Account</label>
+                                                    <input type="text" class="form-control with-light" placeholder="http://instagram.com/yourusername">
+                                                </div>
+                                            </div>
+                                    
+                                        </div>
+                                    </form>
+
                                         <div class="col-lg-12 col-md-12 col-sm-12">
                                             <div class="row">
                                                 <div class="col-lg-12 col-md-12 col-sm-12">
+                                                    <h5 class="body-color">Summary</h5>
                                                     <div class="product-wrap">
-                                                        <h5>Summary</h5>
                                                         <ul>
                                                             <li><strong>Total</strong> KD 319</li>
                                                             <li><strong>Subtotal</strong> KD 319</li>
@@ -353,9 +402,9 @@
                                             </div>
                                         </div>
                             
-                                        <div class="panel-group pay_opy980" id="payaccordion">
+                                <div class="panel-group pay_opy980" id="payaccordion">
 
-                                <!-- Pay By Strip -->
+                                    <!-- Pay By Strip -->
 									<div class="panel panel-default">
 										<div class="panel-heading" id="stripes">
 											<h4 class="panel-title">
@@ -365,12 +414,11 @@
 										<div id="stripePay" class="collapse" aria-labelledby="stripes" data-parent="#payaccordion">
 											<div class="panel-body">
 												<form>
-											
 													<div class="row">
 														<div class="col-lg-6 col-md-6 col-sm-12">
 															<div class="form-group">
 																<label>Select Your Bank</label>
-                                                                <select name="" id="" class="form-control with-light">
+                                                                <select name="" id="" class="form-control with-light" style="height: 56px;">
                                                                     <option value="">National Bank of Kuwait</option>
                                                                     <option value="">Commercial Bank of Kuwait</option>
                                                                     <option value="">Gulf Bank</option>
@@ -396,7 +444,7 @@
 														
 														<div class="col-lg-4 col-md-4 col-sm-12">
 															<div class="form-group">
-																<label>CVC</label>
+																<label>PIN</label>
 																<input type="text" class="form-control with-light">
 															</div>
 														</div>										
@@ -588,6 +636,15 @@
             });
         });
         </script>
+
+        <script>
+			$(document).ready(function() {
+				$('.select2-multi').select2({
+					placeholder: "Select Category",
+					width: '100%' // ensures full-width dropdown
+				});
+			});
+		</script>
 		
 	</body>
 </html>

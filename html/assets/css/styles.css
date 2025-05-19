@@ -500,6 +500,15 @@ html body .db {
 .theme-bg-green{
 	background:#14b47c;
 }
+
+.my-select {
+    height: 56px !important;
+    border-radius: 4px !important;
+    background-color:#f1f4f9 !important;
+    line-height: 25px !important;
+    border: 1px solid #e6eaf1 !important;
+}
+
 /*------------ Global Settings: Ul List Style ----------------*/
 ul.list-style {
     padding: 0;
@@ -3612,6 +3621,14 @@ text-decoration: none;
     margin-top: 50px;
 }
 
+.mb-0{
+    margin-bottom: 0px !important;
+}
+
+.body-color{
+    color: #112737 !important;
+}
+
 .arabic{
     color: #c09e6a;
     font-family:'Almarai', sans-serif !important;
@@ -6485,7 +6502,7 @@ a.btn.bat-call-to-act:hover, a.btn.bat-call-to-act:focus {
     width: 100%;
 	text-align: center;
     position: relative;
-    padding-top: 2.5rem;
+    padding-top: 1.5rem;
 }
 .pricing_rate {
     font-weight: 800;
