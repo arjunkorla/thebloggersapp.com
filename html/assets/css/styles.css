@@ -67,10 +67,6 @@
     position: relative;
     }
 
-    .blog-cates{
-        display: none;
-    }
-
     .jobs-like {
     position: absolute;
     top: 15px !important;
@@ -95,6 +91,10 @@
 
     .hero-banner.full3{
         padding: 0 0 50px 0 !important;
+    }
+
+    ._jb_types{
+        height: 50px !important;
     }
 
 }
@@ -486,7 +486,7 @@ html body .db {
     background:#071d31;
 }
 .dark-2 {
-    background:#19242b;
+    background:#19242b;.blog-cates
 }
 .dark-3 {
     background:#19242b;

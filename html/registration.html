@@ -342,15 +342,17 @@
 
                              <form>
                                         <div class="row">
-                                            <div class="col-lg-6 col-md-6 form-group">
-                                                <label>Select Package</label>
-                                                <div class="form-group mb-1">
-                                                    <input id="e2" class="radio-custom" name="jtype" type="radio" checked>
-                                                    <label for="e2" class="radio-custom-label">Gold Package Price KD 97.00</label>
-                                                </div>
+                                            <div class="col-lg-6 col-md-6 col-sm-6">
                                                 <div class="form-group">
-                                                    <input id="e3" class="radio-custom" name="jtype" type="radio">
-                                                    <label for="e3" class="radio-custom-label">Gold Package Price KD 45.00</label>
+                                                    <label>Gold Price</label>
+                                                    <input type="text" class="form-control with-light" placeholder="Enter Gold Price in KD">
+                                                </div>
+                                            </div>
+
+                                            <div class="col-lg-6 col-md-6 col-sm-6">
+                                                <div class="form-group">
+                                                    <label>Silver Price</label>
+                                                    <input type="text" class="form-control with-light" placeholder="Enter Silver Price in KD">
                                                 </div>
                                             </div>
 
@@ -408,68 +410,18 @@
 									<div class="panel panel-default">
 										<div class="panel-heading" id="stripes">
 											<h4 class="panel-title">
-												<a data-toggle="collapse" role="button" data-parent="#payaccordion" href="#stripePay" aria-expanded="false"  aria-controls="stripePay" class="">KNET<img src="assets/img/knet.png" class="img-fluid" alt=""></a>
+												<a data-toggle="collapse" role="button" data-parent="#payaccordion" href="#stripePay" aria-expanded="true"  aria-controls="stripePay" class="">KNET<img src="assets/img/knet.png" class="img-fluid" alt=""></a>
 											</h4>
 										</div>
-										<div id="stripePay" class="collapse" aria-labelledby="stripes" data-parent="#payaccordion">
-											<div class="panel-body">
-												<form>
-													<div class="row">
-														<div class="col-lg-6 col-md-6 col-sm-12">
-															<div class="form-group">
-																<label>Select Your Bank</label>
-                                                                <select name="" id="" class="form-control with-light" style="height: 56px;">
-                                                                    <option value="">National Bank of Kuwait</option>
-                                                                    <option value="">Commercial Bank of Kuwait</option>
-                                                                    <option value="">Gulf Bank</option>
-                                                                    <option value="">Al Ahli Bank of Kuwait</option>
-                                                                    <option value="">Burgan Bank</option>
-                                                                </select>
-															</div>
-														</div>
-														
-														<div class="col-lg-6 col-md-6 col-sm-12">
-															<div class="form-group">
-																<label>Card Number</label>
-																<input type="text" class="form-control with-light" placeholder="XXXX XXXX XXXX XXXX">
-															</div>
-														</div>									
-													
-														<div class="col-lg-8 col-md-8 col-sm-6">
-															<div class="form-group">
-																<label>Expire Date</label>
-																<input type="text" class="form-control with-light" placeholder="MM/YY">
-															</div>
-														</div>
-														
-														<div class="col-lg-4 col-md-4 col-sm-12">
-															<div class="form-group">
-																<label>PIN</label>
-																<input type="text" class="form-control with-light">
-															</div>
-														</div>										
-														
-														<div class="col-lg-12 col-md-12 col-sm-12">
-															<div class="form-group">
-																<input id="ct-1" class="checkbox-custom" name="ct-1" type="checkbox">
-																<label for="ct-1" class="checkbox-custom-label">By Continuing, you ar'e agree to conditions</label>
-															</div>
-														</div>
-														
-														<div class="col-lg-12 col-md-12 col-sm-12">
-															<div class="form-group text-center">
-																<a href="#" class="btn dark-2 full-width">Pay 319.00 KD</a>
-															</div>
-														</div>
-														
-													</div>
-												
-												</form>
-											</div>
-										</div>
 									</div>
+
+                                    <div class="col-lg-12 col-md-12 col-sm-12">
+                                        <div class="form-group text-center">
+                                            <a href="#" class="btn dark-2 full-width">Pay 319.00 KD</a>
+                                        </div>
+                                    </div>
                                 </div>
-                        </form>
+                            </form>
                                 </div>
                                 
                                 <script>
