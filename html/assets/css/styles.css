@@ -82,7 +82,7 @@
     }
 
     .mob-ml-30{
-        margin-left: 30px !important;
+        margin-left: 15px !important;
     }
 
     .p-0{
@@ -97,6 +97,61 @@
         height: 50px !important;
     }
 
+    .reg-p{
+        padding: 50px 0 250px 0 !important;
+    }
+
+    .btn.btn-theme.blue.light{
+        padding: 0 !important;
+        height: 40px !important;
+    }
+
+    .blog-cates .blog-cates-list{
+        padding: 2px 10px !important;
+        font-size: 12px !important;
+    }
+
+    .slide-width{
+        max-width: 130% !important;
+    }
+
+    .swiper-slide{
+        width: 205px !important;
+        margin-right: 0px !important;
+    }
+
+    .select2-container{
+        width: 100% !important;
+    }
+
+    .home-mt{
+    margin-top: 0px !important;
+    }
+
+    .hero-banner.full2 {
+        height: 130vh !important;
+    }
+
+    .pricing_boxes.featured:before{
+        content: "" !important;
+    }
+
+    .pricing_rate{
+        font-size: 20px !important;
+    }
+
+    .pricing_boxes_middle{
+        padding-top: 5px !important;
+    }
+
+    .pricing_boxes{
+        padding: 10px !important;
+    }
+
+}
+
+.home-mt{
+    margin-top: 130px;
 }
 
 .no-js #loader {
@@ -401,14 +456,14 @@ h1,
 h2,
 h3,
 h4 {
-	color:#00305c;
+	color:#19242b;
 	font-weight:700;
 	font-family:'Jost', sans-serif;
 }
 
 h5,
 h6 {
-	color:#2D3954;
+	color:#19242b;
 	font-weight:600;
 }
 
@@ -2745,7 +2800,7 @@ nav a:hover {
     top: 0;
     left: -400px;
     position: fixed;
-    background-color:#071d31;
+    background-color:#19242b;
     z-index:2222;
     overflow-y: auto;
     -webkit-overflow-scrolling: touch;
@@ -2809,11 +2864,11 @@ nav a:hover {
 .navigation-portrait .nav-menu>li {
     width: 100%;
     position: relative;
-    border-top: solid 1px #0c2944;
+    border-top: solid 1px #3d4246;
 }
 
 .navigation-portrait .nav-menu>li:last-child {
-    border-bottom: solid 1px #0c2944;
+    border-bottom: solid 1px #3d4246;
 }
 
 .nav-menu+.nav-menu>li:first-child {
@@ -5002,7 +5057,7 @@ a._5gt9:hover img {
 	position:relative;
 }
 ._freelacers_120_caption {
-    padding: 0 1rem 0rem;
+    padding: 0 5px 0rem;
     text-align: center;
     position: relative;
 }
@@ -10661,7 +10716,7 @@ footer.skin-dark-footer ul.footer-bottom-social li a:hover, footer.skin-dark-foo
 
 .hero-banner.full2 {
     width: 100%;
-    height: 100vh;
+    height: 130vh;
     background-size: cover !important;
     background-position: center;
     background-repeat: no-repeat;
