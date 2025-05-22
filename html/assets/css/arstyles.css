@@ -185,7 +185,7 @@ body {
 	background: #ffffff;
 	color:#19242b;
 	font-size:15px;
-	font-family: 'Jost', sans-serif;   
+	font-family: 'Almarai', sans-serif;   
 	margin: 0;
 	overflow-x: hidden;
 	font-weight: 400;
@@ -196,6 +196,7 @@ html {
   position: relative;
   min-height: 100%;
   background: #ffffff;
+  direction: rtl;
 }
 
 .home_search{
@@ -458,7 +459,7 @@ h3,
 h4 {
 	color:#19242b;
 	font-weight:700;
-	font-family:'Jost', sans-serif;
+	font-family:'Almarai', sans-serif;
 }
 
 h5,
@@ -2422,8 +2423,8 @@ outline:none;
     color: #8b9aad;
 }
 .select2-container--default .select2-selection--single .select2-selection__clear {
-    right: 5px;
-    top:4px;
+    right: 14px;
+    top:1px;
 }
 .image-bg .form-control, .bg--dark .form-control {
 	color:#495057 !important;
@@ -2712,16 +2713,16 @@ ul {
 }
 
 .align-to-right {
-    float: right
+    float: left
 }
 
 .nav-header {
-    float: left
+    float: right
 }
 
 .nav-brand {
     font-size: 24px;
-	margin-right: 1rem;
+	margin-left: 1rem;
     text-decoration: none !important
 }
 
@@ -2857,8 +2858,8 @@ nav a:hover {
 
 .nav-menu>li {
     display: inline-block;
-    float: left;
-    text-align: left
+    float:right;
+    text-align: right;
 }
 
 .navigation-portrait .nav-menu>li {
@@ -2882,7 +2883,7 @@ nav a:hover {
 .nav-menu>li>a {
     padding: 30px 12px;
     display: inline-block;
-    font-family: 'Jost', sans-serif;
+    font-family: 'Almarai', sans-serif;
     font-weight: 600;
     transition: color .3s, background .3s;
     font-size: 13px;
@@ -3660,6 +3661,10 @@ text-decoration: none;
     text-align: right;
 }
 
+.align-left{
+    text-align: left;
+}
+
 .mt-15{
     margin-top: 15px;
 }
@@ -3684,11 +3689,10 @@ text-decoration: none;
     color: #112737 !important;
 }
 
-.arabic{
+.english{
     color: #c09e6a;
-    font-family:'Almarai', sans-serif !important;
-    margin-left: 30px;
-    font-size: 14px;
+    margin-right: 30px;
+    font-size: 16px;
 }
 
 .arabic:hover{
@@ -4041,7 +4045,7 @@ nav .menu li.dropdown.open > a{
     color:#72809D;
     display: block;
     font-weight: 500;
-    font-family: 'Jost', sans-serif;
+    font-family: 'Almarai', sans-serif;
 }
 
 .account-drop .btn.btn-order-by-filt {
@@ -7254,7 +7258,7 @@ span.hm_nav_clear {
     text-transform: capitalize;
     font-weight: 400;
     color: #72809D;
-    font-family: 'Jost', sans-serif;
+    font-family: 'Almarai', sans-serif;
 }
 .filter_wraps .radio-custom + .radio-custom-label:before {
     margin-right:0px;
