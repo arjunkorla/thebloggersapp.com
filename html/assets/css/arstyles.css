@@ -2489,7 +2489,7 @@ textarea.form-control{
     border: 1px solid #e6ebf3;
     border-radius: 4px;
     cursor: default;
-    float: left;
+    float: right;
     margin-right: 5px;
     margin-top: 15px;
     padding: 0 5px;
@@ -7335,7 +7335,9 @@ span.hm_nav_clear {
     font-weight: 600;
     font-size: 13px;
     margin-bottom: 0.3rem;
+    float: right !important;
 }
+
 .btn-theme-2{
 	color:#ffffff;
 	background:#19242b;
@@ -10765,7 +10767,7 @@ footer.skin-dark-footer ul.footer-bottom-social li a:hover, footer.skin-dark-foo
     content: "";
     position: absolute;
     top: 20px;
-    right: -50%;
+    left: -50%;
     width: 100%;
     height: 2px;
     background: #ccc;
